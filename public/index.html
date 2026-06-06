@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔗 URL Shortener</h1>
+
+      <form id="short-form">
+        <div class="input-group">
+          <label for="url">Enter URL</label>
+          <input
+            type="url"
+            name="url"
+            id="url"
+            placeholder="https://example.com"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="shortcode"> Custom Short URL (Optional) </label>
+          <input
+            type="text"
+            name="shortCode"
+            id="shortcode"
+            placeholder="my-link"
+          />
+        </div>
+
+        <button type="submit">Shorten URL</button>
+      </form>
+
+      <h2 style="text-align: center">Shortened URLs</h2>
+      <div class="results" id="shortened-urls">
+        <!-- <div class="url-card">
+          <a href="#"> http://localhost:3000/thapa </a>
+          <span>→</span>
+          <p>https://kodfyier.com</p>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
